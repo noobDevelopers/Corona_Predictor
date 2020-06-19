@@ -6,6 +6,6 @@ class Predictor(models.Model):
     PREDICT_CHOICES = (
         ('cases','Active Cases'),
         ('deaths','Deaths'),
-        
+        ('cured','Cured')
     )
     to_predict = models.CharField(max_length=20,choices=PREDICT_CHOICES,default='cases')

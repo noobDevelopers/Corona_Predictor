@@ -12,9 +12,10 @@ def home(request):
             date = predictor_form.cleaned_data['date']
             if to_predict == 'cases':
                 text = case_predictor(date)
-            else:
+            elif to_predict == 'deaths':
                 text = death_predictor(date)
-          
+            else:
+                text = cured_predictor(date)
 
             return render(request, 'predictor/predicted.html',{'text':text})
            
