@@ -23,7 +23,7 @@ class PredictorForm(forms.ModelForm):
 
             FormActions(
             Div(Div(Submit('save', 'Predict',css_class="btn-success"),style='display: inline-block;margin-top:50px;padding:10px;margin-left:10px;'),style='text-align: center'),
-                Div(Div(HTML('*Note->The model is based on data from <a href="https://www.kaggle.com">kaggle</a> and does not guarantee for accurate prediction'),style='display: inline-block'),style='text-align: center')
+                Div(Div(HTML('*Note->The model is based on data from <a href="https://www.kaggle.com">kaggle</a> and does not guarantee for accurate prediction<br>*Note->The result produced is per day and not the total count'),style='display: inline-block'),style='text-align: center')
             )
             ,style="margin: 12px;"),
             
