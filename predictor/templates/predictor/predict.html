@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+{% load crispy_forms_tags %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+
+
+
+
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Extreme AI</title>
+    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{%static 'css/hero.css'%}" rel="stylesheet">
+    <!-- Favicon  -->
+ 
+    {{form.media}}
+    <!-- Style CSS -->
+    <div class="hero-image" style="background-image: url('{%static 'images/corona2.jpg'%}'),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));">
+        <div class="hero-text">
+          <h1 style="color: white; font-weight: bolder;">Corona Virus Predictor</h1>
+          <p style="color: white; font-weight: bolder;">By EXTREME-AI</p>
+         
+        </div>
+      </div> 
+    
+    
+
+</head>
+<body>
+  
+       
+      
+      
+    <form action="." method="post" id="predict-form"> 
+        {% crispy predictor_form %}
+        {% csrf_token %} 
+    </form> 
+
+</body>
+</html>

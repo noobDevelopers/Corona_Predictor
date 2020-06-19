@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+{% load crispy_forms_tags %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+
+
+
+
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Extreme AI</title>
+    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{%static 'css/hero.css'%}" rel="stylesheet">
+    <!-- Favicon  -->
+ 
+
+    <!-- Style CSS -->
+
+    
+    
+
+</head>
+<body>
+    <img class="displayed" src="{%static 'images/EXTREME-AI.png'%}" alt="LOGO" style="padding: 10px;">
+   
+    <div style="text-align: center;">
+        <div style="display: inline-block;">
+            <h1 style="color: green;font-weight: normal;">{{text}}</h1>
+        </div>
+    </div>
+    
+    <div style="text-align:center;">
+        <button onclick="location.href='{%url 'home'%}'" type="button" class="btn btn-info" style="cursor: pointer;">Predict Again</button>
+     </div>
+</body>
+</html>
