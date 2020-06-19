@@ -16,7 +16,10 @@ def case_predictor(X):
     x = np.insert(x,0,on,axis=1)
     theta = np.array([[24.262031234015],[4.66632403328913],[-0.496408253816668],[0.00796655882799757]])
     ans = x@theta
-    return f'Number of new Cases on this day:{round(ans[0,0])}'
+    ans = round(ans[0,0])
+    if ans < 0:
+        ans = 0
+    return f'Number of new Cases on this day:{ans}'
 
 def death_predictor(X):
     X = datetime.strptime(X, '%d/%m/%y')
@@ -34,7 +37,10 @@ def death_predictor(X):
     x = np.insert(x,0,on,axis=1)
     theta = np.array([[40.3332349531563],[-3.77721926343234],[0.0470834667089071]])
     ans = x@theta
-    return f'Number of Deaths on this day:{round(ans[0,0])}'
+    ans = round(ans[0,0])
+    if ans < 0:
+        ans = 0
+    return f'Number of Deaths on this day:{ans}'
 
 def cured_predictor(X):
     X = datetime.strptime(X, '%d/%m/%y')
@@ -52,5 +58,8 @@ def cured_predictor(X):
     x = np.insert(x,0,on,axis=1)
     theta = np.array([[1.89167973e+00],[-5.64375249e+00],[6.13618961e-01],[-1.91492596e-02],[2.06626094e-04],[-5.56791382e-07]])
     ans = x@theta
-    return f'Number of Patients Cured on this day:{round(ans[0,0])}'
+    ans = round(ans[0,0])
+    if ans < 0:
+        ans = 0
+    return f'Number of Patients Cured on this day:{ans}'
 

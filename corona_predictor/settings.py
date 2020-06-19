@@ -26,6 +26,7 @@ SECRET_KEY = 'v6o5_0h#9n^^#0p4teuw3p_3cc_1!pknrkpc8^-2)$ys#70epu'
 DEBUG = False
 
 ALLOWED_HOSTS = ['extreme-corona-predictor.herokuapp.com']
+# ALLOWED_HOSTS = []
 
 
 # Application definition
