@@ -47,7 +47,7 @@ def cured_predictor(X):
     initial = datetime.strptime("30/01/20", '%d/%m/%y')
     X = (X-initial).days
     X = np.array([X])
-    degree = 5
+    degree = 3
     out = np.zeros((X.shape[0],degree))
     for i in range(1,degree+1):
         out[:,i-1:i] = X**i
@@ -56,10 +56,11 @@ def cured_predictor(X):
     m = x.shape[0]
     on = np.ones((1,m))
     x = np.insert(x,0,on,axis=1)
-    theta = np.array([[1.89167973e+00],[-5.64375249e+00],[6.13618961e-01],[-1.91492596e-02],[2.06626094e-04],[-5.56791382e-07]])
+    theta = np.array([[-8.06484116e+01],[2.36212767e+01],[-8.78433085e-01],[8.07076317e-03]])
     ans = x@theta
     ans = round(ans[0,0])
     if ans < 0:
         ans = 0
     return f'Number of Patients Cured on this day:{ans}'
 
+print(cured_predictor('19/06/20'))
