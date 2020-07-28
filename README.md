@@ -14,7 +14,7 @@ link -> https://extreme-corona-predictor.herokuapp.com/
   * Python
   * Level-1(Beginner) AI
   
-# What will you learn after completing this project?
+# What you will learn after completing this project?
   * Basic Django
   * Python
   * Manipulating data using pandas
