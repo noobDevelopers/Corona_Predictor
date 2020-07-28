@@ -12,7 +12,7 @@ link -> https://extreme-corona-predictor.herokuapp.com/
   * Heroku for deployment
   * Basic CSS/HTML for frontend
   * Python
-  * Level-1(Begginner) AI
+  * Level-1(Beginner) AI
   
 # What will you learn after completing this project?
   * Basic Django
