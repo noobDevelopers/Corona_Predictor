@@ -39,7 +39,7 @@ A basic model to predict number of new cases/deaths/recovered per day.
 
    4.Commit your changes: git commit -m 'Add some feature'.
 
-   5.Push to the <a href="">feature</a> branch
+   5.Push to the <a href="https://github.com/noobDevelopers/Corona_Predictor/tree/feature">feature</a> branch
 
    7.Submit a pull request 😄
 
